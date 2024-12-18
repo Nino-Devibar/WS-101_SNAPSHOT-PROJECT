@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: smooth;
+}
+
+body {
+    background: #e3ddd5;
+    font-family: 'Arial', sans-serif;
+}
+
+.header {
+    background: #b2a696;
+    padding-bottom: 40px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-fixed {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 200%;
+    color: white;
+    font-weight: 700;
+}
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    border: 1px solid #ddd;
+    padding: 30px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.gallery-item p {
+    font-size: 1.1rem;
+    margin: 2px 0;
+    padding: 0 10px;
+    text-align: center;
+    color: #333;
+    max-width: 200px; 
+    white-space: nowrap;  
+    overflow: hidden;    
+    text-overflow: ellipsis; 
+}
+
+.gallery-item img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    position: relative; 
+}
+
+.gallery-item .open-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border: 2px solid #928980;
+    border-radius: 4px;
+    background-color: #928980;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.gallery-item .open-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+.gallery-item .edit-btn {
+    font-size: 1rem;
+    padding: 8px 15px;;
+    border: 2px solid #928980;
+    border-radius: 4px;
+    background-color: #928980;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.gallery-item .edit-btn:hover {
+    background-color: #333;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+    left: 5rem;
+    position: absolutre;
+}
+
+form .form-group {
+    margin-top: 10px;
+    margin-left: 7px;
+}
+
+button {
+    background-color: #928980;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 200px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
+
+button:focus {
+    outline: none;
+}
+
+.image-item {
+    display: block;
+    max-width: 950px; 
+    max-height: 750px; 
+    width: 100%;      
+    height: auto;      
+    margin: 50px auto 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    object-fit: contain;  
+    text-align: center;
+}
+
+
+
+p {
+    font-size: 1.1rem;
+    margin: 2px 0;
+    padding: 0 10px;
+    text-align: center;
+    color: #333;
+    max-width: 800px;
+}
+
+.desc {
+    font-size: 1.1rem;
+    margin: 2px 0;
+    padding: 0 10px;
+    position: relative;
+    left: 28rem;
+    color: #333;
+    max-width: 800px;
+    word-wrap: break-word; 
+    word-break: break-word; 
+}
+
+.user {
+    font-size: 1rem;
+    color: #555;
+    text-align: center;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.user1 {
+    font-size: 1rem;
+    color: #555;
+    position: relative;
+    left: 28rem;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #928980;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.close-btn:hover {
+    background-color: #d32f2f;
+}
+
+.close-btn:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .image-item {
+        max-width: 100%;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .close-btn {
+        width: 100px;
+    }
+}

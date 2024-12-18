@@ -1,0 +1,107 @@
+/* General Styling */
+* {
+    transition: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3ddd5;
+}
+
+/* Navbar Styling */
+nav {
+    background-color: #b2a696;
+    color: white;
+    padding: 10px 20px; /* Slightly smaller padding */
+    text-align: left;  /* Align text to the left */
+    position: relative;
+    z-index: 10; /* Ensure navbar is always on top */
+}
+
+nav h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.nav-links {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #59534b;
+}
+
+/* Header Section */
+header {
+    background-color: #e3ddd5;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 20px; /* Adds some space between navbar and header */
+}
+
+header h1 {
+    font-weight: 400;
+    margin: 0;
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 4%;
+    opacity: 0.5;
+}
+
+/* Main Content */
+.main-content {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.upload-btn {
+    text-decoration: none;
+    background-color: #928980;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+
+.upload-btn:hover {
+    background-color: #59534b;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #59534b;
+    color: white;
+    text-align: center;
+    padding: 2px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
